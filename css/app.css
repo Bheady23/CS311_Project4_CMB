@@ -1,0 +1,83 @@
+body {
+    padding: 20px;
+}
+
+#container{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "nav nav nav nav"
+        "aside aside main main"
+        "footer footer footer footer";
+        grid-template-rows: auto auto auto auto;
+}
+
+#heading{
+   padding-left: 10px; 
+   background-color: black;
+   color:azure;
+   grid-area: header;  
+}
+
+nav{
+    background-color: crimson;
+    grid-area: nav;
+}
+ 
+a:link{
+    color: #fff;
+}
+
+a:visited{
+    color: #fff;
+}
+
+ul {
+    word-spacing: 80px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    display: inline;
+    list-style: none;
+}
+
+
+#menu li{
+    display: inline-block;
+    margin: 20px;  
+}
+   
+#musicimage{ 
+   grid-area: aside;  
+}
+
+#sheetmusic{
+    grid-area: aside;   
+}
+
+#intro{
+    color: #fff;
+    font-size: 28px;
+    background-color: black;
+    grid-area: main;
+    padding: 10px;
+  
+}
+
+#footer{
+    grid-area: footer;
+    Height: 50px;
+    color: #fff;
+    background-color: crimson;
+    text-align: center;
+    
+}
+
+#reflection{
+    background-color: rgb(199, 196, 196);
+    padding-top: 25px;
+    padding-left: 50px;
+    padding-right: 100px;
+}

@@ -1,0 +1,92 @@
+body {
+    padding: 20px;
+}
+
+#container{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas: 
+        "header header header header"
+        "nav nav nav nav"
+        "works composer composer composer"
+        "works bio pic pic"
+        "works bio pic pic"
+        "works bio pic pic"
+        "footer footer footer footer";
+        grid-template-rows: auto auto auto auto auto auto;
+}
+
+#heading{
+    padding-left: 10px;
+   background-color: black;
+   color:azure;
+   grid-area: header;
+   
+}
+
+nav{
+    background-color: crimson;
+    grid-area: nav;
+}
+ 
+a:link{
+    color: #fff;
+}
+
+a:visited{
+    color: #fff;
+}
+
+ul {
+    word-spacing: 80px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    display: inline;
+    list-style: none;
+}
+
+
+#menu li{
+    display: inline-block;
+    margin: 20px;  
+}
+
+#works{
+    grid-area: works;
+    padding: 5px;
+    background-color: rgb(199, 196, 196);
+   
+}
+
+#composer{
+    padding-left: 20px;
+    text-align: left;
+    
+    grid-area: composer;
+    font-size: 36px;
+    height: 60px;
+    width: 1000Px;
+    background-color: black;
+    color: #fff;
+}
+
+#bio{
+    grid-area: bio;
+    padding: 5px;
+}
+
+#pic{
+    grid-area: pic;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer{
+    grid-area: footer;
+    Height: 50px;
+    color: #fff;
+    background-color: crimson;
+    text-align: center;
+}
